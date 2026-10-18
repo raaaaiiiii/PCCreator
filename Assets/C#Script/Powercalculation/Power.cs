@@ -18,7 +18,7 @@ public class Power : MonoBehaviour
     int Powercheck(int basecore,float frequency,float maxfrequency)
     {
         float Power;
-        Power=basecore*1.2f*frequency+(frequency-maxfrequency);
+        Power=basecore*1.2f*frequency+(maxfrequency-frequency);
         return (int)Power;
     }
 }
